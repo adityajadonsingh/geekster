@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 111;
+    background-color: #fff;
+}
+header .item{
+    display: flex;
+    align-items: center;
+}
+header i{
+    cursor: pointer;
+}
+header .item .icn i{
+    font-size: 20px;
+    padding: 10px 20px 10px 15px;
+}
+header .logo img{
+    width: 50px;
+    height: 50px;
+}
+header .search{
+    display: flex;
+    align-items: center;
+}
+header .search input{
+    font-size: 14px;
+    padding: 7px 10px;
+    width: 450px;
+    border: 1px solid #c6c6c6;
+    border-right: none;
+
+}
+header .search .icn button{
+    font-size: 16px;
+    height: 100%;
+    border: none;
+    padding: 7px 10px;
+}
+header .icns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    color: #575757;
+}
+main{
+    display: flex;
+    overflow: hidden;
+}
+.menu-list {
+    width: 230px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.menu-list ul{
+    margin-top: 10px;
+}
+.menu-list ul li{
+    display: flex;
+    gap: 20px;
+    padding: 15px 30px;
+    align-items: center;
+    color: #606060;
+}
+.menu-list ul li .icn{
+    font-size: 20px;
+}
+.menu-list ul li .item{
+    font-size: 16px;
+}
+.menu-list ul hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+}
+.videos{
+    border-top: 1px solid black;
+    padding: 15px 20px;
+    width: calc(100% - 230px);
+    border-top: 1px solid #c6c6c6;
+    background-color: #f9f9f9;
+    overflow-y: scroll;
+    height: calc(100% - 70px);
+}
+.videos .deck{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.videos .deck .card{
+    width: 310px;
+    margin-top: 15px;
+}
+.videos .deck .card img{
+    width: 100%;
+}
+.videos .heading{
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+}
+.videos .heading .icn img{
+    width: 40px;
+    height: 40px;
+}
+.videos .card a, .videos .card span{
+    text-decoration: none;
+  color: rgb(96,96,96);
+  font-size: 14px;
+}
