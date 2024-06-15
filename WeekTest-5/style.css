@@ -1,0 +1,276 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header .head-top {
+    height: 60px;
+    background-color: #0f1111;
+    display: flex;
+    justify-content: center;
+}
+
+header .head-top .wrapper {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header .head-top .logo-img{
+    height: 100%;
+}
+header .head-top .logo-img img {
+    width: 128px;
+}
+
+header .head-top .deliver p {
+    color: #ccc;
+    font-size: 13px;
+    text-align: end;
+}
+header .head-top .deliver .icn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+header .head-top .deliver .icn i {
+    color: #fff;
+    font-size: 20px;
+}
+header .head-top .deliver .icn p a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+header .head-top .search-box{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+  border-radius: 3px;
+}
+header .head-top .search-box .optn{
+    height: 100%;
+}
+header .head-top .search-box .optn select{
+    width: 50px;
+  background-color: #f3f3f3;
+  border: none;
+  font-size: 14px;
+  padding: 5px 5px;
+  height: 100%;
+}
+header .head-top .search-box .search-bar{
+    height: 100%;
+}
+header .head-top .search-box .search-bar input{
+    width: 550px;
+    font-size: 18px;
+    padding: 3px 5px;
+    font-weight: 500;
+    border: none;
+    background-color: #fff;
+    height: 100%;
+}
+header .head-top .search-box .search-bar input:focus{
+    outline: none;
+}
+header .head-top .search-box .search-icn{
+    background-color: #febd68;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+header .head-top .account-list .small a{
+    font-size: 12px;
+    color: #fff;
+    transition: 0.2s linear;
+}
+header .head-top .account-list .big a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.1s linear;
+}
+header .head-top .account-list:hover .big a, header .head-top .account-list:hover .small a{
+    color: #ddd;
+}
+header .head-top .cart{
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+    color: #fff;
+}
+header .head-top .cart i{
+    font-size: 35px;
+    
+}
+header .head-top .cart p{
+    font-size: 14px;
+    font-weight: 600;
+}
+header .head-btm{
+    height: 44px;
+    width: 100%;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: center;
+}
+header .head-btm .wrapper{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .head-btm .wrapper .nav-items{
+    display: flex;
+    align-items: center; 
+    gap: 12px;
+}
+header .head-btm .wrapper .nav-items .icn i{
+    font-size: 20px;
+    color: #fff;
+}
+header .head-btm .wrapper .nav-items ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 12px;
+
+}
+header .head-btm .wrapper .nav-items ul li a{
+    color: #fff;
+    font-size: 14px;
+    transition: 0.2s linear;
+}
+header .head-btm .wrapper .deal a{
+    color: #fff;
+    font-size: 14px;
+    transition: 0.2s linear;
+}
+header .head-btm p > a:hover{
+    color: #ddd !important;
+}
+.banner{
+    background-image: url('https://priyanshu-240499.github.io/Assignments-CSS/Weekly%20Test%20for%20CSS%20(Week-3)/images/hero-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.catagory{
+    background-color: #f3f3f3;
+    padding: 50px 0;
+    display: flex;
+  justify-content: center;
+}
+.catagory .wrapper{
+    background-color: #f3f3f3;
+    max-width: 1280px;
+    width: 100%;
+}
+.catagory .wrapper .deck{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px;
+}
+.catagory .wrapper .deck .card{
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.catagory .wrapper .deck .card .inn-wrap{
+    transition: 0.3s linear;
+}
+.catagory .wrapper .deck .card:hover .inn-wrap{
+    transform: scale(1.08);
+}
+.catagory .wrapper .deck .card .inn-wrap .text h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.catagory .wrapper .deck .card .inn-wrap .img-box img{
+    width: 100%;
+  height: 280px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+.catagory .wrapper .deck .card .inn-wrap .link a{
+    transition: 0.2s linear;
+    color: blue;
+}
+.catagory .wrapper .deck .card .inn-wrap .link a:hover{
+    color: orange;
+}
+.back{
+    width: 100%;
+    text-align: center;
+    background-color: #37475a;
+}
+.back p {
+    width: 100%;
+    font-size: 20px;
+}
+.back p a{
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 20px 0;
+}
+footer{
+    padding: 30px 0;
+    background-color: #232f3e; 
+    display: flex;
+    justify-content: center;
+}
+footer .wrapper{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .wrapper .fList h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+footer .wrapper .fList ul{
+    list-style: none;
+}
+footer .wrapper .fList ul li a{
+    color: #ddd;
+    font-size: 14px;
+    transition: 0.2s linear;
+}
+footer .wrapper .fList ul li a:hover{
+    text-decoration: underline;
+}
