@@ -1,0 +1,8 @@
+@media only screen and (max-width: 900px) {
+    .banner .content p {
+        padding: 0 20px;
+    }
+    .banner::after, .contact::before{
+        display: none;
+    }
+}
