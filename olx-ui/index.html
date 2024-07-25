@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OLX</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/responsive.css">
+    </head>
+    <body class="relative">
+        <header>
+            <div class="nav-wrapper px-3 py-2 md:flex hidden gap-x-3">
+                <div class="logo">
+                    <svg width="48px" height="48px" viewBox="0 0 1024 1024"
+                        data-aut-id="icon" class fill-rule="evenodd"><path
+                            class="rui-w4DG7"
+                            d="M661.333 256v512h-128v-512h128zM277.333 298.667c117.824 0 213.333 95.531 213.333 213.333s-95.509 213.333-213.333 213.333c-117.824 0-213.333-95.531-213.333-213.333s95.509-213.333 213.333-213.333zM794.496 384l37.504 37.504 37.504-37.504h90.496v90.496l-37.504 37.504 37.504 37.504v90.496h-90.496l-37.504-37.504-37.504 37.504h-90.496v-90.496l37.504-37.504-37.504-37.504v-90.496h90.496zM277.333 426.667c-47.061 0-85.333 38.293-85.333 85.333s38.272 85.333 85.333 85.333c47.061 0 85.333-38.293 85.333-85.333s-38.272-85.333-85.333-85.333z"></path></svg>
+                </div>
+                <div class="search-location shrink-0 ">
+                    <div class="outer flex items-center h-full gap-x-3 px-2 ">
+                        <span><i class="bi bi-search text-base"></i></span>
+                        <div class="flex justify-between ll ">
+                            <span>India</span>
+                            <span><i class="bi bi-chevron-down text-xl pr-2"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="find shrink md:flex hidden">
+                    <div
+                        class="outer w-full h-full p-2 flex items-center justify-center">
+                        <input type="text" class="w-full"
+                            placeholder="Find Cars, Mobile Phones and more...">
+                    </div>
+                    <div
+                        class="search-btn outer h-full flex items-center justify-center">
+                        <i class="bi bi-search text-xl"></i>
+                    </div>
+                </div>
+                <div class="language h-full outer my-auto">
+                    <div class=" ">
+                        <select name="language">
+                            <option value>ENGLISH</option>
+                            <option value>हिंदी</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="login my-auto px-2 outer">
+                    <span class="font-bold underline">Login</span>
+                </div>
+                <div class="sell-btn outer">
+                    <img src="assets/images/sell-btn.png" alt>
+                </div>
+            </div>
+            <div class="nav-wrapper px-3 py-2 md:hidden flex justify-between">
+                <div class="flex gap-x-3">
+                    <div class="logo">
+                        <svg width="48px" height="48px" viewBox="0 0 1024 1024"
+                            data-aut-id="icon" class fill-rule="evenodd"><path
+                                class="rui-w4DG7"
+                                d="M661.333 256v512h-128v-512h128zM277.333 298.667c117.824 0 213.333 95.531 213.333 213.333s-95.509 213.333-213.333 213.333c-117.824 0-213.333-95.531-213.333-213.333s95.509-213.333 213.333-213.333zM794.496 384l37.504 37.504 37.504-37.504h90.496v90.496l-37.504 37.504 37.504 37.504v90.496h-90.496l-37.504-37.504-37.504 37.504h-90.496v-90.496l37.504-37.504-37.504-37.504v-90.496h90.496zM277.333 426.667c-47.061 0-85.333 38.293-85.333 85.333s38.272 85.333 85.333 85.333c47.061 0 85.333-38.293 85.333-85.333s-38.272-85.333-85.333-85.333z"></path></svg>
+                    </div>
+                    <div class="language outer my-auto">
+                        <div class=" ">
+                            <select name="language">
+                                <option value>ENGLISH</option>
+                                <option value>हिंदी</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-x-3">
+                    <div class="login my-auto px-2 outer">
+                        <span class="font-bold underline">Login</span>
+                    </div>
+                    <div class="sell-btn outer">
+                        <img src="assets/images/sell-btn.png" alt>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="category mt-1 py-2 overflow-hidden">
+            <div
+                class="container lg:mx-auto mx-3 2xl:3/5 xl:w-5/6 lg:w-full w-full">
+                <div class="wrapper w-full">
+                    <ul class="flex gap-x-3">
+                        <li class="font-bold uppercase not mr-4">All Categories
+                            <span><i class="bi bi-chevron-down"></i></span></li>
+                        <li>Cars</li>
+                        <li>Motorcycles</li>
+                        <li>Mobile Phones</li>
+                        <li>For Sale: Houses & Apartments</li>
+                        <li>Scooters</li>
+                        <li>Commercial & Other Vehicles</li>
+                        <li>For Rent: Houses & Apartments</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="big-wrapper px-3">
+            <section class="products mt-10">
+                <h1>Fresh Recomendations</h1>
+                <div class="wrapper">
+                    <div class="flex gap-3 mt-4 flex-wrap justify-center">
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/64qjh7iqwfx9-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 7,500</div>
+                                <div class="name">Vivo v27 5G mobile 8GB RAM 128
+                                    GB internal</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Samudrapur, Maharashtra</span>
+                                    <span>TODAY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/6xnzg12hc25c-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 25,500</div>
+                                <div class="name">Selling my 6 months old iPhone
+                                    15. Need urgent money</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Samudrapur, Maharashtra</span>
+                                    <span>TODAY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/l1y1adua5trg-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 2,000</div>
+                                <div class="name">We have new latest collection
+                                    ultra sim watches online order book</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Samudrapur, Maharashtra</span>
+                                    <span>TODAY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/cto91y6up8xc3-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 439</div>
+                                <div class="name">3 in 1 portable high vaccum
+                                    cleaner. USB rechargeable wireless
+                                    vaccum.</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Samudrapur, Maharashtra</span>
+                                    <span>YESTERDAY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/tn8zv3y6pahg3-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 26,00,000</div>
+                                <div class="name">Land For Sale ( शेती विकणे
+                                    आहे)</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Samudrapur, Maharashtra</span>
+                                    <span>JUL 11</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/aphhqc18jn5m2-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 5,000</div>
+                                <div class="name">Antique Brass Maritime Stand
+                                    Telescope 1915</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Gotri Road, Vadodara</span>
+                                    <span>JUL 16</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/19a1d60nyasw2-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 1,700</div>
+                                <div class="name">Antique maritime victoria
+                                    Pocket watch london 1915
+                                    With leather case</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Gotri Road, Vadodara</span>
+                                    <span>JUL 16</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/e7gtot4r2ncs1-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 16,90,000</div>
+                                <div class="name">Mercedes-Benz C-Class C 220d,
+                                    2015, Diesel</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Sector 11, Faridabad</span>
+                                    <span>TODAY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/3jy5k9np0hei2-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 1,000</div>
+                                <div class="name">Car Decor(all india COD
+                                    available)</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Gotri Road, Vadodara</span>
+                                    <span>JUL 12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/7x81ydl07pey1-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 24,500</div>
+                                <div class="name">Selling my 6 months old iPhone
+                                    14. Need urgent money</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Samudrapur MIDC, Maharashtra</span>
+                                    <span>TODAY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="image-box relative">
+                                <img
+                                    src="https://apollo.olx.in/v1/files/2bqwez6meplp2-IN/image;s=300x600;q=60"
+                                    alt>
+                                <div class="dill absolute">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                            </div>
+                            <div class="content mt-2 px-2">
+                                <div class="price">₹ 14,99,000</div>
+                                <div class="name">Hyundai Elantra 2.0 SX, 2022,
+                                    Petrol</div>
+                                <div class="locate flex justify-between mt-2">
+                                    <span>Kandivali West, Mumbai</span>
+                                    <span>JUL 8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="load-btn mt-10 flex justify-center">
+                    <button>Load More</button>
+                </div>
+            </section>
+        </div>
+        <section class="olx-app mt-9">
+            <div class="lg:container mx-auto ">
+                <div class="wrapper flex flex-wrap">
+                    <div class="img-box md:w-2/6 w-full flex justify-end">
+                        <img
+                            src="https://statics.olx.in/external/base/img/phone-app.webp"
+                            alt>
+                    </div>
+                    <div class="try-app md:w-2/6 w-full">
+                        <div class="inner mx-5 h-48 flex items-center">
+                            <div class="inn">
+                                <p
+                                    class="try uppercase font-bold text-3xl mb-3">Try
+                                    the olx app</p>
+                                <p class="buy text-xl">Buy, sell and find just
+                                    about anything using the app on your
+                                    mobile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="get-app md:w-2/6 flex items-center w-full lg:mb-0 py-5 lg:mx-0 mx-5">
+                        <div class="inner lg:ps-8">
+                            <p class="get font-bold uppercase text-sm">Get your app
+                                today</p>
+                            <div class="app-logo flex gap-x-3 mt-3">
+                                <img
+                                    src="https://statics.olx.in/external/base/img/appstore_2x.webp"
+                                    alt>
+                                <img
+                                    src="https://statics.olx.in/external/base/img/playstore_2x.webp"
+                                    alt>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-top py-5">
+            <div class="container mx-auto flex lg:justify-center flex-wrap">
+                <div class="box lg:w-1/5">
+                    <ul>
+                        <li class="font-bold text-base mb-3">Popular Locations</li>
+                        <li class="text-xs">Kolkata</li>
+                        <li class="text-xs">Mumbai</li>
+                        <li class="text-xs">Chennai</li>
+                        <li class="text-xs">Pune</li>
+                    </ul>
+                </div>
+                <div class="box lg:w-1/5">
+                    <ul>
+                        <li class="font-bold text-base mb-3">Trending Locations</li>
+                        <li class="text-xs">Bhubaneshwar</li>
+                        <li class="text-xs">Hyderabad</li>
+                        <li class="text-xs">Chandigarh</li>
+                        <li class="text-xs">Nashik</li>
+                    </ul>
+                </div>
+                <div class="box lg:w-1/5">
+                    <ul>
+                        <li class="font-bold text-base mb-3">About Us</li>
+                        <li class="text-xs">Contact Us</li>
+                        <li class="text-xs">Tech@OLX</li>
+                    </ul>
+                </div>
+                <div class="box lg:w-1/5">
+                    <ul>
+                        <li class="font-bold text-base mb-3">OLX</li>
+                        <li class="text-xs">Blog</li>
+                        <li class="text-xs">Help</li>
+                        <li class="text-xs">Sitemap</li>
+                        <li class="text-xs">Legal & Privacy information</li>
+                        <li class="text-xs">Vulnerability Disclosure Program</li>
+                    </ul>
+                </div>
+                <div class="box lg:w-1/5 flex flex-col justify-between">
+                    <ul>
+                        <li class="font-bold text-base mb-3">Follow Us</li>
+                        <li class="flex icns gap-x-2">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-youtube"></i>
+                        </li>
+                    </ul>
+                    <div class="play-short flex gap-x-3">
+                        <img src="https://statics.olx.in/external/base/img/playstore.webp" alt="">
+                        <img src="https://statics.olx.in/external/base/img/appstore.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-bottom pt-8 pb-4">
+            <div class="container mx-auto">
+                <div class="flex mb-5 flex-wrap justify-center">
+                    <div class="img-box first lg:w-1/6">
+                        <img src="https://statics.olx.in/external/base/img/cartrade/logo/cartrade_tech.svg?v=1" alt="">
+                    </div>
+                    <div class="img-box lg:w-1/6 flex items-center justify-center">
+                        <img src="https://statics.olx.in/external/base/img/cartrade/logo/olx.svg?v=1" alt="">
+                    </div>
+                    <div class="img-box lg:w-1/6 flex items-center justify-center">
+                        <img src="https://statics.olx.in/external/base/img/cartrade/logo/carwale.svg?v=1" alt="">
+                    </div>
+                    <div class="img-box lg:w-1/6 flex items-center justify-center">
+                        <img src="https://statics.olx.in/external/base/img/cartrade/logo/bikewale.svg?v=1" alt="">
+                    </div>
+                    <div class="img-box lg:w-1/6 flex items-center justify-center">
+                        <img src="https://statics.olx.in/external/base/img/cartrade/logo/cartrade.svg?v=1" alt="">
+                    </div>
+                    <div class="img-box lg:w-1/6 flex items-center justify-center">
+                        <img src="https://statics.olx.in/external/base/img/cartrade/logo/mobility.svg?v=1" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between text-white px-4 ">
+                    <span class="text-xs">Help - Sitemap</span>
+                    <span class="text-xs">All rights reserved © 2006-2024 OLX</span>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

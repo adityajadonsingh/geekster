@@ -1,0 +1,8 @@
+@media only screen and (max-width: 617px){
+    .products .card{
+        width: calc(50% - 16px);
+    }
+    .footer-bottom .img-box.first{
+        border: none;
+    }
+}
