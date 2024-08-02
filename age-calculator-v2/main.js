@@ -1,34 +1,56 @@
-let dobInput = document.querySelector(".dob input");
+let dobInput = document.querySelector("#dob");
 let dispayYear = document.querySelector(".year");
 let dispayMonth = document.querySelector(".months");
 let dispayDays = document.querySelector(".days");
 
-function showGap(){}
+dobInput.max = new Date().toISOString().split("T")[0];
 
-let today = new Date();
-let todayDate = today.getDate();
-let todayMonth = today.getMonth() + 1;
-let todayYear = today.getFullYear();
-let allMonths = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-dobInput.addEventListener("change", function () {
-    const dob = new Date(dobInput.value);
-    const dobDate = dob.getDate();
-    const dobMonth = dob.getMonth() + 1;
-    const dobYear = dob.getFullYear();
-    
-    if((dobYear > todayYear) || (dobMonth > todayMonth && dobYear >= todayYear) || (dobDate > todayDate && dobMonth >= todayMonth && dobYear >= todayYear)){
+dobInput.addEventListener('change', calculateAge);
 
+function calculateAge() {
+    let birthDate = new Date(dobInput.value);
+    let bDate = birthDate.getDate();
+    let bMonth = birthDate.getMonth() + 1;
+    let bYear = birthDate.getFullYear();
+
+    let today = new Date();
+    let todayDate = today.getDate();
+    let todayMonth = today.getMonth() + 1;
+    let todayYear = today.getFullYear();
+
+    let resultDate, resultMonth;
+    let resultYear = todayYear - bYear;
+
+    if (todayMonth >= bMonth) {
+        resultMonth = todayMonth - bMonth;
+    } else {
+        resultYear--;
+        resultMonth = 12 + todayMonth - bMonth;
     }
 
-    let dates = 0;
-    let month = 0;
-    if(dobDate <= todayDate){
-        dates = Math.abs(dobDate - todayDate);
-        console.log(dates)
-    }else{
-        dates = Math.abs(dobDate - todayDate);
-        console.log(dates)
+    if (todayDate >= bDate) {
+        resultDate = todayDate - bDate;
+    } else {
+        resultMonth--;
+        resultDate = getDaysInMonth(todayYear, todayMonth - 1) + todayDate - bDate;
     }
-    // console.log(dobDate, dobMonth, dobYear)
-});
 
+    if (resultMonth < 0) {
+        resultMonth = 11;
+        resultYear--;
+    }
+
+    dispayYear.innerHTML = resultYear;
+    dispayMonth.innerHTML = resultMonth;
+    dispayDays.innerHTML = resultDate;
+}
+
+function getDaysInMonth(year, month) {
+    return new Date(year, month + 1, 0).getDate();
+}
+function reset() {
+    dobInput.value = '';
+    dispayYear.innerHTML = '-';
+    dispayMonth.innerHTML = '-';
+    dispayDays.innerHTML = '-';
+}

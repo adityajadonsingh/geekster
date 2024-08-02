@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex justify-center items-center">
-    <div class="layout w-2/5">
-        <div class="flex gap-x-6 mb-10">
-            <div class="dob w-3/5">
-                <input type="date" name="dob" id="">
+<body class="flex justify-center items-center flex-col">
+    <h1>Age Calculator</h1>
+    <div class="layout w-1/5">
+        
+        <div class=" mb-10">
+            
+            <div class="dob w-full mb-8">
+                <input type="date" name="dob" id="dob">
             </div>
-            <div class="calculate-btn w-2/5">
-                <button class="calculate">Calculate</button>
+            <div class="calculate-btn w-full">
+                <button class="calculate" onclick="calculateAge()">Calculate</button>
+                <button class="reset calculate ml-4" onclick="reset()">Reset</button>
             </div>
         </div>
         <div class="flex justify-between">

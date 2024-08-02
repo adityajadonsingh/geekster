@@ -1,54 +1,90 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-body{
-    background-color: rgb(47, 35, 204);
+
+body {
+    background: rgb(0, 134, 255);
+    background: -moz-linear-gradient(150deg, rgba(0, 134, 255, 1) 0%, rgba(4, 0, 255, 1) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(0, 134, 255, 1) 0%, rgba(4, 0, 255, 1) 100%);
+    background: linear-gradient(150deg, rgba(0, 134, 255, 1) 0%, rgba(4, 0, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0086ff", endColorstr="#0400ff", GradientType=1);
 }
-.dob, .calculate-btn{
-    background-color: #000;
+
+h1 {
+    font-size: 60px !important;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px !important;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.dob,
+.calculate-btn {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 25px 20px;
-    border-radius: 5px;
 }
-.dob input{
+
+.dob input {
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    padding: 0 10px ;
+    padding: 0 10px;
 }
-.calculate{
-    background-color: #fff;
+
+.calculate {
+    background-color: #36509d;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    padding: 0 10px ;
+    padding: 0 10px;
+    transition: 0.2s;
 }
-.item{
+.calculate:hover {
+    background-color: #fff;
+    color: #0406ff;
+}
+.item {
     height: 100px;
     width: 100px;
-    background-color: #000;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
     color: #fff;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.item .count{
+
+.item .count {
     font-size: 38px;
     font-weight: 600;
     margin-top: 10px;
 }
-.item .text{
-    color: #acacac;
+
+.item .text {
+    color: #e3e3e3;
 }
