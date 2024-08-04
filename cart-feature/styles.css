@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 80%;
+    max-width: 900px;
+  }
+  
+  .products, .cart {
+    padding: 20px;
+    width: 50%;
+  }
+  
+  .products {
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .product, .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .product span{
+    padding: 0 10px;
+  }
+  .product:last-child, .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+  
+  .total {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+  }
+  
+  .cart {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+  }
+  
+  #cart-list {
+    min-height: 150px;
+  }
+  
+  .cart-item {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-bold{
+    font-weight: 600;
+  }

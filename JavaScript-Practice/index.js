@@ -20,3 +20,5 @@
 // let arr = [8,2,6,4,0,9];
 // let flag = arr.some((val) => val & 1);
 // console.log(flag)
+
+
