@@ -240,7 +240,7 @@ const emojiList = [
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🤭"
+    "emoji": "☺️"
   , "description": "smiling face"
   , "category": "Smileys & Emotion"
   , "aliases": [
