@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="clock w-2/5 flex gap-x-3 items-end">
+        <div class="item w-1/3">
+           <div class="hour num">0</div>
+           <div class="text">HOURS</div>
+        </div>
+        <div class="item w-1/3">
+            <div class="min num">0</div>
+            <div class="text">MINUTES</div>
+        </div>
+        <div class="item w-1/3">
+            <div class="sec num">0</div>
+            <div class="text">SECONDS</div>
+        </div>
+        <div class="zone"></div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
