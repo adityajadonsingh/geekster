@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Order System</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="restaurant-container">
+        <h1 class="restaurant-title">Welcome to Burger King</h1>
+        <div class="order-section">
+            <h2 class="menu-title">Select Your Food Items</h2>
+            <div class="food-options">
+                <input type="checkbox" id="food-burger" class="food-checkbox" value="Burger">
+                <label for="food-burger" class="food-label">Burger</label>
+                
+                <input type="checkbox" id="food-fries" class="food-checkbox" value="Fries">
+                <label for="food-fries" class="food-label">Fries</label>
+                
+                <input type="checkbox" id="food-drink" class="food-checkbox" value="Drink">
+                <label for="food-drink" class="food-label">Drink</label>
+            </div>
+            <button id="order-button" class="order-btn">Order Food</button>
+        </div>
+        <div id="order-id" class="order-id">Order ID: <span id="order-id-value"></span></div>
+        <img id="food-image" class="food-display" src="" alt="Ordered Food">
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

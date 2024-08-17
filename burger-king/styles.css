@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.restaurant-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.restaurant-title {
+    font-size: 2rem;
+    color: #d22d2d;
+    margin-bottom: 20px;
+}
+
+.menu-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.food-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.food-checkbox {
+    margin-right: 10px;
+}
+
+.food-label {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    background-color: #d22d2d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #b21e1e;
+}
+
+.order-id {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #d22d2d;
+    display: none;
+}
+
+.food-display {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: none;
+    border-radius: 10px;
+}
