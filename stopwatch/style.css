@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stopwatch .box, span{
+    font-size: 70px;
+}
+.stopwatch .wrapper{
+    padding: 15px 40px;
+    background-color: rgb(0, 112, 123);
+    border-radius: 80px;
+    color: #fff;
+}
+span{
+    font-size: 50px;
+}
+
+.controls button{
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 50px;
+    border-radius: 50px;
+}
+.controls button:hover{
+    background-color: rgb(160, 92, 224);
+}

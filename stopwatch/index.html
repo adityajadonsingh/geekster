@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section class="stopwatch w-full">
+        <div class="container mx-auto flex justify-center">
+            <div class="wrapper flex gap-x-2 justify-center w-2/5 items-center">
+                <div class="box">
+                    <div class="hour">00</div>
+                </div>
+                <span>:</span>                   
+                <div class="box">
+                    <div class="min">00</div>
+                </div>
+                <span>:</span>
+                <div class="box">
+                    <div class="sec">00</div>
+                </div>
+                <span>:</span>
+                <div class="box">
+                    <div class="milli">00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="controls mt-6">
+        <div class="container mx-auto flex justify-center">
+            <div class="wrapper flex gap-x-2 justify-center w-2/5 items-center">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
