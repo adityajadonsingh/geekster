@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nunito", sans-serif;
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Outfit", sans-serif;
+}
+.header{
+    padding: 20px 0 400px;
+    background-color: #1c2735;
+}
+.header .logo h1{
+    color: #a6adba;
+    font-weight: 800;
+}
+.btn button{
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #641ae6;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+.btn button:hover{
+    background-color: #803bf6;
+}
+.header .heading h2{
+    font-size: 65px;
+    color: #a6adba;
+}
+
+.header .heading p{
+    font-size: 20px;
+    color: #a6adba;
+    padding: 0 20%;
+}
+.main{
+    background-color: #1d232a;
+    padding: 450px 0 100px;
+}
+.main .small, .main .big{
+    display: flex;
+    align-items: end;
+}
+.main .image-grid {
+    top: -410px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.main .small img, .main .big img{
+    width: 100%;
+}
+.main .big img{
+    width: 87%;
+    height: auto;
+}
+.main .small{
+    padding-bottom: 50px;
+}
+.main .search .heading h3{
+    color: #a6adba;
+}
+.main .input input{
+    height: fit-content;
+  font-size: 18px;
+  padding: 8px 15px;
+  outline: 0;
+  background: transparent;
+  border: 0.08em solid #a6adba94;
+  border-radius: 10px;
+  color: #a6adba;
+}
+.main .deck .card{
+    margin: 15px;
+    padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(9, 8, 8, 0.22) 0px 3px 15px;
+}
+.main .deck .card .img-box img{
+    width: fit-content;
+  height: 100%;
+  border-radius: 16px;
+}
+.main .deck .card .content{
+    color: #a6adba;
+}
+.main .deck .card .content .title{
+    font-size: 23px;
+    font-weight: 700;
+}
+.main .deck .card .content p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer{
+    background-color: #1c2735;
+    padding: 100px 0;
+}
+.popup-modal{
+    color: #a6adba;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000087;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-modal .wrapper{
+    padding: 30px 25px;
+    background-color: #1d232a;
+    height: auto;
+    border-radius: 20px;
+}
+.popup-modal .wrapper .image-box img{
+    border-radius: 16px;
+}
+.popup-modal .wrapper .content .phone-name{
+    font-size: 25px;
+    font-weight: 700;
+}
+.popup-modal .btn button{
+    background-color: red;
+}
+.popup-modal .btn button:hover{
+    background-color: rgb(189, 0, 0);
+}
