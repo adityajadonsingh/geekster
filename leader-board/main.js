@@ -4,6 +4,33 @@ let inp_country = document.querySelector("#country");
 let inp_score = document.querySelector("#score");
 let submit = document.querySelector("#submit");
 let scoreContainer = document.querySelector("tbody");
+
+scoreContainer.addEventListener("click", (e)=>{
+    let getIdx = e.target.parentElement.firstElementChild.innerText - 1;
+    if(e.target.classList.contains("inc")){
+        let newScore = parseInt(data[getIdx].score);
+        newScore += 5;
+        data[getIdx].score = newScore;
+        console.log(data[getIdx].score);
+    }else if(e.target.classList.contains("dec")){
+        let newScore = parseInt(data[getIdx].score);
+        newScore -= 5;
+        data[getIdx].score = newScore;
+    }else if(e.target.parentNode.classList.contains("remove")){
+        getIdx = e.target.parentNode.parentNode.firstElementChild.innerHTML - 1;
+        delete data[getIdx];
+    }
+    data.sort(function(a, b) {
+        return b.score - a.score;
+    });
+    scoreContainer.innerHTML = "";
+    data.forEach(function(person, index) {
+        scoreContainer.innerHTML += generateRow(person.firstName, person.lastName, person.country, person.score, index + 1);
+    });
+    
+
+});
+
 let data = [];
 
 submit.addEventListener("click", function (e) {
@@ -36,13 +63,10 @@ submit.addEventListener("click", function (e) {
         data.forEach(function(person, index) {
             scoreContainer.innerHTML += generateRow(person.firstName, person.lastName, person.country, person.score, index + 1);
         });
-        
-
     }
-
-    console.log(data)
-
 });
+
+
 
 
 

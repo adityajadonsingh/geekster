@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    cursor: pointer;
+}
+
+.submited{
+    display: none ;
+}
+
+.btn{
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.item{
+    padding: 20px 30px;
+}
+
+.item.selected{
+    background-color: #7fffd4;
+}
+
+.btn button{
+    background-color: aquamarine;
+  padding: 8px 60px;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: 600;
+}

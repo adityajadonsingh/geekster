@@ -5,7 +5,6 @@ window.addEventListener("load", displayResult(""));
 function displayResult(searchQuery) {
     let filteredList = emojiList.filter(function (emote){
         if(emote.description.indexOf(searchQuery) != -1){
-            // console.log(emote.description)
             return true;
         }
     });

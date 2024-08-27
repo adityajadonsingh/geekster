@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="sticky flex">
+        <div class="text-area w-1/2 m-auto">
+            <div class="inner w-4/5 mx-auto">
+                <h1 class="text-5xl font-bold mb-5 text-white">Sticky Notes</h1>
+                <textarea class="border w-full h-80 p-5"  name="" id=""></textarea>
+                <div class="flex gap-x-4 mt-5 items-center">
+                    <button id="addNote" class="">Add Note</button>
+                <input type="color" id="getColor">
+                </div>
+            </div>
+        </div>
+        <div class="notes w-1/2 p-10 flex gap-4 content-start h-full flex-wrap">
+            
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
