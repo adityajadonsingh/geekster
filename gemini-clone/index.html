@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="w-full">
+        <section class="gemini w-full h-full">
+            <div class="container mx-auto w-full h-full flex flex-col justify-between">
+                <div class="user-welcome">
+                    <h1>Hello, Aditya</h1>
+                    <span>How can I help you today?</span>
+                </div>
+                <div class="bottom">
+                    <div class="searched hidden">
+                    </div>
+                    <div class="search flex relative mt-10">
+                        <input type="text" id="search-field" placeholder="Enter Your Prompt Here">
+                        <button id="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
