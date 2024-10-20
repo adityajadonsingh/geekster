@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Stock App</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container text-center">
+                <h1>Stock Tracker App</h1>
+            </div>
+        </header>
+        <main>
+            <section class="search-area">
+                <div class="container">
+                    <div class="outer">
+                        <div class="row justify-content-between row-gap-3">
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="search-input">
+                                    <form onsubmit="searchFunc(event)">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <input required id="search-query" type="text" placeholder="Search for a Stock...">
+                                            </div>
+                                            <div class="col-4">
+                                                <button class="btn search-btn">Search</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="search-input">
+                                    <div class="dropdown">
+                                        <button class="btn search-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Select Trending Stock
+                                        </button>
+                                        <ul class="dropdown-menu" id="topTen">
+                                          <li><a class="dropdown-item" data-stock="AAPL">AAPL</a></li>
+                                          <li><a class="dropdown-item" data-stock="GOOGL">GOOGL</a></li>
+                                          <li><a class="dropdown-item" data-stock="MSFT">MSFT</a></li>
+                                          <li><a class="dropdown-item" data-stock="AMZN">AMZN</a></li>
+                                          <li><a class="dropdown-item" data-stock="TSLA">TSLA</a></li>
+                                          <li><a class="dropdown-item" data-stock="FB">FB</a></li>
+                                          <li><a class="dropdown-item" data-stock="NFLX">NFLX</a></li>
+                                          <li><a class="dropdown-item" data-stock="NVDA">NVDA</a></li>
+                                          <li><a class="dropdown-item" data-stock="BABA">BABA</a></li>
+                                          <li><a class="dropdown-item" data-stock="INTC">INTC</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stock-details" id="single-stock">
+                <div class="container">
+                    <div class="outer">
+                        <h2>Search Stock for Details</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chart-area">
+                <div class="container">
+                    <div class="outer">
+                        <div class="inner">
+                            <canvas id="stock-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stock-details">
+                <div class="container">
+                    <div class="outer">
+                        <div class="inner w-100">
+                            <h2>Compare Stocks</h2>
+                        <div class="table-responsive mt-2">
+                            <table class="table mb-0 table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Change</th>
+                                    <th scope="col">Volue</th>
+                                  </tr>
+                                </thead>
+                                <tbody id="compare-stock">
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
