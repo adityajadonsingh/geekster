@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 16px 0;
+    background-color: #e6f4ff;
+}
+
+header h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #424242;
+}
+.new-comment{
+    border: none;
+    background-color: #3737e3;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.1s linear;
+}
+.new-comment:hover{
+    background-color: #5858ea;
+}
+
+.comments{
+    padding: 50px 0;
+}
+
+.comments .main-comment{
+    display: flex;
+    background-color: #eee;
+    padding: 16px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.comments .main-comment .img-box .image{
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.comments .main-comment .img-box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.comments .main-comment .text-box .user-info{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.comments .main-comment .text-box{
+    width: 100%;
+}
+.comments .main-comment .text-box .user-info .username{
+    font-weight: 600;
+    color: #161616;
+    font-size: 18px;
+}
+.comments .main-comment .text-box .user-info .date{
+    font-weight: 400;
+    color: #575757;
+    font-size: 14px;
+}
+.comments .main-comment .text-box .user-comment p{
+    font-weight: 400;
+    color: #494949;
+    font-size: 16px;
+}
+.reply-btn, .edit-btn{
+    background-color: #a3a3a3;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+  transition: 0.1s linear;
+}
+.edit-btn{
+    background-color: #00bd38;
+}
+.edit-btn:hover{
+    background-color: #0add49;
+}
+.reply-btn:hover{
+    background-color: #888888;
+}
+.reply-box{
+    display: none;
+}
+.reply-box.show{
+    display: block;
+}
+
+.reply-box .main-comment{
+    background-color: #fff;
+}
