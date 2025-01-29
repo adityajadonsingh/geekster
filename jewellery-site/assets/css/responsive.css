@@ -84,8 +84,11 @@
       }
 }
 @media screen and (max-width: 500px){
+    .cards .card{
+        padding-right: 20px;
+    }
     .testimonal .inner .rigth-side .testimonials .card .name{
-        font-size: 25px;
+        font-size: 22px;
       }
     .top-nav .search-bar button {
         display: none;
