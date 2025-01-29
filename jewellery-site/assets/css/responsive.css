@@ -1,0 +1,117 @@
+@media screen and (max-width: 1199px){
+    .btm-nav .nav .nav-list {
+        column-gap: 12px;
+      }
+}
+@media screen and (max-width: 991px){
+    .top-nav .search-bar{
+        width: 100%;
+    }
+    .btm-nav .nav .nav-list {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .mini-banner .overlay h2 {
+        color: #2b6e73;
+        font-size: 20px;
+      }
+      .mini-banner .overlay h2 span {
+        color: #fff;
+        font-size: 30px;
+    }
+    .mini-banner .overlay .inner button{
+        font-size: 12px;
+  font-weight: 700;
+  margin-top: 5px;
+    }
+    .mini-banner.other-2 .overlay h2 {
+        font-size: 24px;
+      }
+      .mini-banner.other-2 .overlay span {
+        color: #3e4751;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      .mini-banner.other-2 .overlay{
+        left: 2%;
+      }
+      .testimonal .inner{
+        display: block;
+      }
+      .testimonal .inner .left-side {
+        width: 100%;
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .testimonal .inner .rigth-side {
+        width: 100%;
+      }
+      .testimonal .inner .left-side p{
+        padding: 0;
+      }
+      .testimonal .inner .left-side .stars{
+        bottom: -22px;
+        right: 50%;
+        transform: translateX(50%);
+        white-space: nowrap;
+      }
+      
+}
+@media screen and (max-width: 767px){
+    .banner {
+        margin: 95px 0 35px;
+      }
+    .mini-banner.other-2 .overlay{
+        display: none;
+      }
+      .top-nav {
+        height: 65px;
+    }
+    .btm-nav{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        background-color: #fff;
+        z-index: 9999;
+        top: 100%;
+        transform: translateY(-99%);
+        transition: 0.2s all linear;
+    }
+    .btm-nav .nav .nav-list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+      }
+}
+@media screen and (max-width: 500px){
+    .testimonal .inner .rigth-side .testimonials .card .name{
+        font-size: 25px;
+      }
+    .top-nav .search-bar button {
+        display: none;
+    }
+    .top-nav .logo span {
+        font-size: 22px;
+      }
+      .banner .btm-part .inner .floating{
+        padding: 10px 20px;
+  font-size: 16px;
+      }
+      .prod-card .top-part .box{
+        display: none;
+      }
+      .prod-card .btm-part .money {
+        font-size: 18px;
+    }
+    .prod-card .add i{
+        margin: 0 !important;
+    }
+    .prod-card .add span{
+        display: none;
+    }
+    .mini-banner .img-box .float {
+        padding: 14px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+}
